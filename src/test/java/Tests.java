@@ -58,6 +58,13 @@ public class Tests {
         String input = "!@ # $ % ^&*()?><|";
         Assert.assertEquals(input + "...", ShortenString.shortenString(input, 30));
     }
+
+    public static void main(String[] args) {
+        String str = ShortenString.shortenString("!@ # $ % ^&*()?><|", 9);
+        System.out.println(str);
+        String input = "!@ # $ % ^&*()?><|" + "...";
+        System.out.println(input.length());
+    }
     }
 
 
